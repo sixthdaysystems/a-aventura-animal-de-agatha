@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-:root {
-    --gray900: #212529;
-    --white: #fff;
-}
-
 body {
     width: 100vw;
     height: 100vh;
-    background-color: var(--gray900);
     margin: 0;
-    color: white;
+    position: absolute;
 }
 
 img {
@@ -27,6 +21,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 article {
@@ -50,6 +45,28 @@ h1 {
     padding-left: 1vw;
     padding-right: 1vw;
 }
+
+.arrows {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.arrows button {
+    width: 14vw;
+}
+
+.light {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.dark {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
 
 @media (orientation: landscape) {
     article {

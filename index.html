@@ -8,22 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <section id="section1">
+<body class="dark">
+    <section>
         <article>
             <div>
                 <img src="img/capa.webp" alt="Imagem">
             </div>
             <div>
                 <h1>Bem-vindo ao nosso cantinho mágico!<br>Neste mundo encantado tem um livro virtual especialmente para
-                    você e todas as pessoas especiais. Aqui as histórias e aventuras ganham vida.<br><span>Claudio Marques Programador</span>
-                    <button onclick="goToElement('section2')" type="button">Claudio Marques Programador
-                    </button>
+                    você e todas as pessoas especiais. Aqui as histórias e aventuras ganham vida.<br><span>Claudio
+                        Marques Programador</span>
                 </h1>
             </div>
         </article>
+        <div class="arrows">
+            <button id="mode-toggle" type="button">&#128161</button>
+            <button class="up-button" type="button" disabled>&#8657</button>
+            <button class="down-button" type="button">&#8659</button>
+        </div>
     </section>
-    <section id="section2">
+    <section>
         <article>
             <div>
                 <img src="img/1.webp" alt="Imagem">
@@ -33,6 +37,24 @@
                     mochila e partiu para as ruas da cidade.</h1>
             </div>
         </article>
+        <div class="arrows">
+            <button class="up-button" type="button">&#8657</button>
+            <button class="down-button" type="button">&#8659</button>
+        </div>
+    </section>
+    <section>
+        <article>
+            <div>
+                <img src="img/3.webp" alt="Imagem">
+            </div>
+            <div>
+                <h1>O primeiro animal que Agatha encontrou foi um pequeno gato malhado, assustado e tremendo. Agatha se aproximou com cuidado para não assustá-lo ainda mais.</h1>
+            </div>
+        </article>
+        <div class="arrows">
+            <button class="up-button" type="button">&#8657</button>
+            <button class="down-button" type="button">&#8659</button>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>
