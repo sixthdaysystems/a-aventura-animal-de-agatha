@@ -45,12 +45,11 @@ article div {
 
 h1 {
     font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    letter-spacing: 2px;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
-
-/*#section1 {
-    background: url(img/capa.webp) center;
-    background-size: cover;
-}*/
 
 @media (orientation: landscape) {
     article {
