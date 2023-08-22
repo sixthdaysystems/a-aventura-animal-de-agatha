@@ -85,8 +85,7 @@ h2 {
     color: #f8f9fa;
 }
 
-span {
-    text-decoration: underline;
+a {
     color: #0d6efd;
 }
 
@@ -94,5 +93,9 @@ span {
     article {
         width: 177vh;
         height: 100vh;
+    }
+
+    h1 {
+        font-size: 7vmin;
     }
 }
