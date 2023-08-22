@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     position: absolute;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 img {
@@ -38,12 +46,22 @@ article div {
     justify-content: center;
 }
 
-h1 {
+h1,
+h2 {
     font-family: 'Roboto', sans-serif;
     text-align: justify;
     letter-spacing: 2px;
     padding-left: 1vw;
     padding-right: 1vw;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5.5vmin;
+}
+
+h2 {
+    font-size: 5.3vmin;
 }
 
 .arrows {
@@ -67,6 +85,10 @@ h1 {
     color: #f8f9fa;
 }
 
+span {
+    text-decoration: underline;
+    color: #0d6efd;
+}
 
 @media (orientation: landscape) {
     article {
