@@ -32,3 +32,23 @@ downButtons.forEach((button, index) => {
         }
     });
 });
+
+//fonts
+function setDefaultFont() {
+    const h1Elements = document.querySelectorAll("h1");
+    h1Elements.forEach(h1 => h1.classList.add("font-roboto"));
+}
+
+window.onload = setDefaultFont;
+
+const fontSelect = document.getElementById("fontSelect");
+const h1Elements = document.querySelectorAll("h1");
+
+fontSelect.addEventListener("change", function () {
+    const selectedFontClass = fontSelect.value;
+
+    h1Elements.forEach(h1 => {
+        h1.classList.remove("font-roboto", "font-dancing-script", "font-quicksand", "font-amatic-sc", "font-fredoka");
+        h1.classList.add(selectedFontClass);
+    });
+});
