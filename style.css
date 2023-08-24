@@ -123,10 +123,13 @@ audio {
     border-style: outset;
     border-color: buttonborder;
     border-image: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .audio-player::before {
-    content: '\25B7';/*\25B6*/
+    content: '\25B7';
     color: black;
     cursor: pointer;
 }
