@@ -48,7 +48,7 @@ fontSelect.addEventListener("change", function () {
     const selectedFontClass = fontSelect.value;
 
     h1Elements.forEach(h1 => {
-        h1.classList.remove("font-roboto", "font-dancing-script", "font-quicksand", "font-amatic-sc", "font-fredoka");
+        h1.classList.remove("font-roboto", "font-dancing-script", "font-quicksand", "font-amatic-sc", "font-lobster");
         h1.classList.add(selectedFontClass);
     });
 });
@@ -70,6 +70,27 @@ audioElements.forEach((audio, index) => {
             if (otherIndex !== index && !otherAudio.paused) {
                 otherAudio.pause();
             }
+        });
+    });
+});
+
+//get random color
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+const geth1Elements = document.querySelectorAll('h1');
+
+geth1Elements.forEach(h1 => {
+    h1.addEventListener('click', () => {
+        const randomColor = getRandomColor();
+        geth1Elements.forEach(element => {
+            element.style.color = randomColor;
         });
     });
 });

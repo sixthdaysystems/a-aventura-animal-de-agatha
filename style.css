@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 * {
     box-sizing: border-box;
@@ -17,14 +17,6 @@ body {
 
 body::-webkit-scrollbar {
     display: none;
-}
-
-img {
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: hidden;
 }
 
 section {
@@ -55,6 +47,15 @@ h1 {
     padding-left: 1vw;
     padding-right: 1vw;
     margin: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
 }
 
 .font-roboto {
@@ -69,7 +70,7 @@ h1 {
 
 .font-quicksand {
     font-family: 'Quicksand', sans-serif;
-    font-size: 6.1vmin;
+    font-size: 6vmin;
 }
 
 .font-amatic-sc {
@@ -77,9 +78,9 @@ h1 {
     font-size: 7.6vmin;
 }
 
-.font-fredoka {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 6.2vmin;
+.font-lobster {
+    font-family: 'Lobster', cursive;
+    font-size: 6.3vmin;
 }
 
 .arrows {
@@ -156,7 +157,7 @@ audio {
         font-size: 8.7vmin;
     }
 
-    .font-fredoka {
-        font-size: 7.2vmin;
+    .font-lobster {
+        font-size: 7.6vmin;
     }
 }
