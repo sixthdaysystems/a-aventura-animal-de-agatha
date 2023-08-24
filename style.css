@@ -111,6 +111,26 @@ a {
     color: #0d6efd;
 }
 
+audio {
+    display: none;
+}
+
+.audio-player {
+    width: 14vw;
+    background-color: white;
+    text-align: center;
+    border-width: 1px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+.audio-player::before {
+    content: '\25B6';
+    color: black;
+    cursor: pointer;
+}
+
 @media (orientation: landscape) {
     article {
         width: 177vh;

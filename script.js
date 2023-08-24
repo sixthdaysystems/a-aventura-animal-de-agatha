@@ -52,3 +52,24 @@ fontSelect.addEventListener("change", function () {
         h1.classList.add(selectedFontClass);
     });
 });
+
+//audios
+const audioElements = document.querySelectorAll('audio');
+
+audioElements.forEach((audio, index) => {
+    const player = audio.parentElement;
+
+    player.addEventListener('click', function () {
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+
+        audioElements.forEach((otherAudio, otherIndex) => {
+            if (otherIndex !== index && !otherAudio.paused) {
+                otherAudio.pause();
+            }
+        });
+    });
+});
