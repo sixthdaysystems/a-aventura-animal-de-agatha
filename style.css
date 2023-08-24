@@ -126,7 +126,7 @@ audio {
 }
 
 .audio-player::before {
-    content: '\25B6';
+    content: '\25B7';/*\25B6*/
     color: black;
     cursor: pointer;
 }
